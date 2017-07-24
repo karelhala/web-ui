@@ -1,17 +1,19 @@
-<div class="logo">
-  <a href="index.html">
-    <span>Lumeer</span>
-  </a>
-</div>
-
-<div class="search">
-  <search-box *ngIf="isSearchBoxShown()"></search-box>
-</div>
-
-<div class="menu">
+<div class="header">
+  <div class="logo">
+    <a href="index.html">
+      <span>Lumeer</span>
+    </a>
+  </div>
+  <!-- TODO search box will be provided by another component -->
+  <div class="search">
+    <input class="search-box" placeholder="Type anything you search for..."/>
+    <button class="search-button">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
   <div class="project" *ngIf="workspaceService.isWorkspaceSet()">
-    <a routeLink="/workspace">
-      <span>{{workspaceService.projectCode}}@{{workspaceService.organizationCode}}</span>
+    <a href="javascript: void(0)" routeLink="/workspace">
+      <span>{{workspaceService.organizationCode}}@{{workspaceService.projectCode}}</span>
     </a>
   </div>
   <div class="notifications">0</div>
