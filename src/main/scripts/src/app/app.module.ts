@@ -30,6 +30,7 @@ import {CollectionModule} from './collection/collection.module';
 import {SearchModule} from './search/search.module';
 import {DocumentsModule} from './documents/documents.module';
 import {SimpleNotificationsModule} from 'angular2-notifications/dist';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import {SimpleNotificationsModule} from 'angular2-notifications/dist';
     DocumentsModule,
     SearchModule,
     WorkspaceModule,
+    SharedModule,
     AppRoutingModule // needs to stay last
   ],
   declarations: [

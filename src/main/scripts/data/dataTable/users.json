@@ -1,0 +1,36 @@
+{
+  "color": "",
+  "rows": [
+    {
+      "name": "Pepa",
+      "surname": "Bral",
+      "age": 20
+    },
+    {
+      "name": "Tomas",
+      "surname": "Pytlik",
+      "age": 20
+    },
+    {
+      "name": "Klara",
+      "surname": "Normalni",
+      "age": 20
+    },
+    {
+      "name": "Tereza",
+      "surname": "Domaci",
+      "age": 20
+    },
+    {
+      "name": "Hana",
+      "surname": "Vzdalena",
+      "age": 20
+    }
+  ],
+  "header": [{"title": "Name"}, {"title": "Surname"}, {"title": "Age"}],
+  "settings": {
+    "color": "659865",
+    "editable": false,
+    "lineNumberColor": "BD9814"
+  }
+}

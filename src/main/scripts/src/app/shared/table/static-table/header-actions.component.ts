@@ -18,30 +18,19 @@
  * -----------------------------------------------------------------------/
  */
 
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
-import {StaticTableComponent} from './static-table/static-table.component';
-import {TableHeaderComponent} from './static-table/table-header.component';
-import {TableRowComponent} from './static-table/table-row.component';
-import {HeaderActions} from './static-table/header-actions.component';
-
-@NgModule({
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
-  declarations: [
-    StaticTableComponent,
-    TableHeaderComponent,
-    HeaderActions,
-    TableRowComponent,
-  ],
-  exports: [
-    StaticTableComponent
-  ]
+@Component({
+  selector: 'header-actions',
+  templateUrl: './header-actions.component.html',
+  styleUrls: ['./header-actions.component.scss']
 })
-export class TableModule {
+export class HeaderActions {
+  @Input() public headerItem: any;
+  @Input() public index: number;
+  @Input() public hoverIndex: number;
 
+  @Output() public toggleColumn: EventEmitter<any> = new EventEmitter();
+  @Output() public removeColumn: EventEmitter<any> = new EventEmitter();
+  @Output() public hideColumn: EventEmitter<any> = new EventEmitter();
 }

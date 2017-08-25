@@ -25,40 +25,8 @@
     vertical-align: top;
   }
 
-  .header-actions {
-    i {
-      cursor: pointer;
-    }
-
-    div:not(.placeholder) {
-      display: inline-block;
-      vertical-align: super;
-
-      &.dropdown button {
-        margin-top: -5px;
-      }
-    }
-  }
-
   .header-title, .header-actions {
     display: inline-block;
-  }
-
-  .placeholder {
-    width: 22px;
-    height: 15px;
-  }
-
-  .dropdown, .placeholder {
-    display: inline-block;
-
-    .dropdown-toggle {
-      background: none;
-    }
-
-    li {
-      cursor: pointer;
-    }
   }
 }
 

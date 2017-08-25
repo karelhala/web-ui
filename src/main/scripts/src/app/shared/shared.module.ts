@@ -27,6 +27,8 @@ import {PermissionsComponent} from './permissions/permissions.component';
 import {PermissionsTableComponent} from './permissions/table/permissions-table.component';
 import {SearchBoxComponent} from './search-box/search-box.component';
 import {TableModule} from './table/table.module';
+import {AutoCompleteComponent} from './auto-complete/auto-complete.component';
+import {EditableDirective} from './auto-complete/editable.directive';
 
 @NgModule({
   imports: [
@@ -36,6 +38,8 @@ import {TableModule} from './table/table.module';
   declarations: [
     PermissionsComponent,
     PermissionsTableComponent,
+    AutoCompleteComponent,
+    EditableDirective,
     SearchBoxComponent
   ],
   exports: [
@@ -44,6 +48,7 @@ import {TableModule} from './table/table.module';
     PermissionsComponent,
     PerspectivesModule,
     SearchBoxComponent,
+    AutoCompleteComponent,
     TableModule
   ]
 })
