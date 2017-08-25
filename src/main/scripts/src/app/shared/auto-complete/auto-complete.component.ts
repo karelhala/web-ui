@@ -61,6 +61,7 @@ export class AutoCompleteComponent {
   constructor(private renderer: Renderer) {}
 
   public onShowPicker() {
+    console.log(this.filteredSource);
     this.pickerVisible = true;
   }
 

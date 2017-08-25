@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+
+:host ::ng-deep {
+  .lum-autocomplete .dropdown-select {
+    position: absolute;
+    background: white;
+    min-width: 100px;
+    margin-left: -5px;
+    box-shadow: $default-shadow;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+}

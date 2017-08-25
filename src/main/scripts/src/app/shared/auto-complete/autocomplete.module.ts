@@ -21,31 +21,23 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
-
-import {StaticTableComponent} from './static-table/static-table.component';
-import {TableHeaderComponent} from './static-table/table-header.component';
-import {TableRowComponent} from './static-table/table-row.component';
-import {HeaderActions} from './static-table/header-actions.component';
-import {HeaderTitle} from './static-table/header-title.componet';
-import {AutoComplete} from '../auto-complete/autocomplete.module';
+import {AutoCompleteComponent} from './auto-complete.component';
+import {EditableDirective} from './editable.directive';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    AutoComplete
+    FormsModule
   ],
   declarations: [
-    StaticTableComponent,
-    TableHeaderComponent,
-    HeaderActions,
-    HeaderTitle,
-    TableRowComponent,
+    AutoCompleteComponent,
+    EditableDirective
   ],
   exports: [
-    StaticTableComponent
+    AutoCompleteComponent,
+    EditableDirective
   ]
 })
-export class TableModule {
+export class AutoComplete {
 
 }

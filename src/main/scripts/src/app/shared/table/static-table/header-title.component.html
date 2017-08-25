@@ -1,0 +1,10 @@
+<lum-auto-complete [options]="options"
+                   [source]="source"
+                   (modelDataChange)="onTitleChanged($event)"
+                   [modelData]="headerItem.label">
+  <span *ngIf="!headerItem.hidden"
+        contenteditable="true"
+        (input)="headerItem.label = $event.target.textContent">
+    {{ headerItem.label || '&nbsp;'}}
+  </span>
+</lum-auto-complete>

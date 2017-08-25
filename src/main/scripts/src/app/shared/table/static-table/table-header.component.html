@@ -7,12 +7,13 @@
      [ngClass]="{active: headerItem.active, 'header-hidden': headerItem.hidden}"
      (mouseover)="onHover(index)"
      class="header-item">
+
   <div class="header-title">
-    <span *ngIf="!headerItem.hidden"
-          [attr.contenteditable]="settings.editable">
-    {{ headerItem.label || '&nbsp;'}}
-  </span>
+    <header-title [headerItem]="headerItem"
+                  [settings]="settings"
+                  (headerItemChange)="headerItem.label"></header-title>
   </div>
+
   <div class="header-actions">
     <header-actions [headerItem]="headerItem"
                     [hoverIndex]="hoverIndex"
